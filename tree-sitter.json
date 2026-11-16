@@ -1,0 +1,43 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "gmpl",
+      "camelcase": "GMPL",
+      "title": "GNU MathProg Language",
+      "scope": "source.gmpl",
+      "file-types": [
+        "mod",
+        "dat"
+      ],
+      "injection-regex": "^gmpl$",
+      "class-name": "TreeSitterGmpl"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "GMPL bindings to the Tree-sitter parsing library",
+    "authors": [
+      {
+        "name": "Florian P. Walter",
+        "email": "florian.p.walter@gmail.com",
+        "url": ""
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/florian-walter/tree-sitter-gmpl",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
